@@ -256,6 +256,16 @@
 
         <plugins>
             <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <configuration>
+                    <!-- Docker Host, Imagename und Dockerfile Directory -->
+                    <dockerHost>http://192.168.65.2:2375</dockerHost>
+                    <imageName>${project.build.finalName}</imageName>
+                    <dockerDirectory>.</dockerDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>io.thorntail</groupId>
                 <artifactId>thorntail-maven-plugin</artifactId>
                 <configuration>
