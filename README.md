@@ -208,6 +208,8 @@ To build and run the application from the command line with an Oracle database:
 
     $ mvn package -Poracle
     $ java -jar target/thorntail-example-app-1.0.0-SNAPSHOT-thorntail.jar -Soracle
+
+To build from docker run docker image from `Dockerfile.builder` either with `--net host --env DOCKER_HOST="tcp://192.168.65.2:2375"` or `--env DOCKER_HOST="tcp://host.docker.internal:2375" --expose 2375` parameters.
     
 ## Running from Docker
 
